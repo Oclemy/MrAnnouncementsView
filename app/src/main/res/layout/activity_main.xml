@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#009688"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/headerTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Announcements View"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center_vertical">
+
+
+        <info.camposha.mrannouncementview.AnnouncementView
+            android:id="@+id/announcemnet_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
